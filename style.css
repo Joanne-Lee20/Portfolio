@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    text-align: center;
+    background-color:rgb(50, 43, 59);
+    font-family:'Press Start 2P', cursive;
+}
+
+#websiteheader {
+    padding: 20px;
+    background-color: rgb(131, 175, 153);
+    color: rgb(243, 207, 197);
+    text-align:right;
+}
+
+#pagetitle {
+    background-color:rgb(230, 99, 95);
+    margin-top: 20px;
+    padding: 90px;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    color: rgb(241, 211, 203);
+}
+
+#directory {
+    text-align: left;
+    margin-top: 20px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(247, 172, 122);
+}
+a {
+    font-family:'Press Start 2P', cursive;
+    text-decoration:none;
+    font-size:20px;
+    color: rgb(230, 99, 95);
+    text-align: center;
+}
+a:hover {
+    color:rgb(241, 211, 203);
+}
+ul {
+    list-style-type:none;
+    text-align: center;
+}
+button {
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+    background-color:rgb(247, 172, 122);
+    font-family:courier;
+    border: none;
+
+}
+hr {
+    background-color:rgb(241, 211, 203);
+    height: 100px;
+}
+
+#mainbox {
+    padding: 30px;
+    background-color:rgb(241, 211, 203);
+    margin-top: 5px;
+}
+h3 {
+    color: rgb(31, 28, 43);
+}
+#blink {
+    animation: blink 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+}
+@keyframes blink {
+    from {opacity:0};
+    to {opacity:1};
+}
+a:hover, .selectblink {
+    animation: blink 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: none;
+}
+img {
+    margin: 1px;
+}
+#pinkcolorsquare {
+    background-color:rgb(230, 99, 95);
+    width:30px;
+    height:30px;
+    color:rgb(230, 99, 95);
+    margin: 20px 5px;
+}
+#greencolorsquare {
+    background-color:rgb(131, 175, 153);
+    width:30px;
+    height:30px;
+    color:rgb(131, 175, 153);
+    margin: 20px 5px;
+}
+#yellowcolorsquare {
+    background-color:rgb(247, 172, 122);;
+    width:30px;
+    height:30px;
+    color:rgb(247, 172, 122);;
+    margin: 20px 5px;
+}
+p {
+    margin-top: 10px;
+}
+
+.pro {
+    background-color:rgb(131, 175, 153);
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    color: rgb(243, 207, 197);
+}
+.con {
+    background-color:rgb(230, 99, 95);
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    color: rgb(243, 207, 197);
+}
+.proscons {
+    text-align: left;
+}
