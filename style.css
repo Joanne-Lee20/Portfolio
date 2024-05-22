@@ -1,27 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+/*Colors*/
+:root {
+    --white: #F3E1E4;
+    --blue: #91a3bd;
+    --gray: #b2becf;
+    --pink: #e3c8c6;
+    --brown: #a3848a;
+    --black: #35364A;
+}
+html {
+    scroll-behavior: smooth !important;
+}
 body {
     text-align: center;
-    background-color:rgb(50, 43, 59);
-    font-family:'Press Start 2P', cursive;
+    background-color:var(--white);
+    font-family: "Farro", sans-serif;
+    font-weight: 800px;
+    margin-top: 10%;
+    background-image:
+        linear-gradient(to right, var(--gray) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--gray) 1px, transparent 1px);
+    background-size: 2rem 2rem;
 }
 
 #websiteheader {
+    width: 100%;
+    display: block;
     padding: 20px;
-    background-color: rgb(131, 175, 153);
-    color: rgb(243, 207, 197);
-    text-align:right;
+    margin: 0;
+    background-color: var(--blue);
+    color: var(--black);
+    text-align:center;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+#rest {
+    background-color: var(--pink);
+    box-shadow: 10px 10px var(--black);
+    margin-bottom: 50px;
 }
 
 #pagetitle {
-    background-color:rgb(230, 99, 95);
-    margin-top: 20px;
-    padding: 90px;
+    margin: 40px;
+    padding: 60px;
+    margin-right: 60px;
     text-align: center;
-    margin-bottom: 20px;
+    align-content:center;
+    background-color:var(--white);
+    z-index: -50;
 }
 h1 {
-    font-size: 50px;
-    color: rgb(241, 211, 203);
+    font-size: 90px;
+    color: var(--black);
+    font-weight: 900px;
 }
 
 #directory {
@@ -29,47 +65,61 @@ h1 {
     margin-top: 20px;
 }
 h2 {
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
-    color: rgb(247, 172, 122);
+    color: var(--black);
 }
+#about-me-h2 {
+    text-align: left;
+}
+
 a {
-    font-family:'Press Start 2P', cursive;
     text-decoration:none;
-    font-size:20px;
-    color: rgb(230, 99, 95);
+    font-size:15px;
+    color: var(--black);
     text-align: center;
 }
 a:hover {
-    color:rgb(241, 211, 203);
+    color:var(--black);
 }
 ul {
-    list-style-type:none;
-    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
 }
-button {
-    padding: 10px;
-    padding-bottom: 5px;
-    margin: 5px;
-    margin-left: 0px;
-    border-radius: 5px;
-    background-color:rgb(247, 172, 122);
-    font-family:courier;
-    border: none;
 
+#nav {
+float: left;
 }
-hr {
-    background-color:rgb(241, 211, 203);
-    height: 100px;
+
+button {
+    margin-top: 10px;
+    background-color:var(--white);
+    border: solid;
+    border-width: 2px;
+    transition: all 0.2s;
+    border-radius:5px;
+    color: var(--black);
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-right:20px;
+}
+
+button:hover {
+    box-shadow: 0.3rem 0.3rem 0 var(--black);
+    transform: translate(-0.3rem, -0.3rem);
+}
+button:active {
+    box-shadow: 0 0 0 var(--black);
+    transform: translate(0, 0);
 }
 
 #mainbox {
-    padding: 30px;
-    background-color:rgb(241, 211, 203);
-    margin-top: 5px;
+    margin:20px;
 }
 h3 {
-    color: rgb(31, 28, 43);
+    color: var(--black);
+    font-size: 30px;
 }
 #blink {
     animation: blink 0.3s;
@@ -81,54 +131,97 @@ h3 {
     from {opacity:0};
     to {opacity:1};
 }
-a:hover, .selectblink {
-    animation: blink 0.3s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: none;
-}
-img {
-    margin: 1px;
-}
-#pinkcolorsquare {
-    background-color:rgb(230, 99, 95);
-    width:30px;
-    height:30px;
-    color:rgb(230, 99, 95);
-    margin: 20px 5px;
-}
-#greencolorsquare {
-    background-color:rgb(131, 175, 153);
-    width:30px;
-    height:30px;
-    color:rgb(131, 175, 153);
-    margin: 20px 5px;
-}
-#yellowcolorsquare {
-    background-color:rgb(247, 172, 122);;
-    width:30px;
-    height:30px;
-    color:rgb(247, 172, 122);;
-    margin: 20px 5px;
+
+#blue {
+    background-color: var(--gray);
 }
 p {
     margin-top: 10px;
 }
 
-.pro {
-    background-color:rgb(131, 175, 153);
-    width: 500px;
-    height: 200px;
-    margin: auto;
-    color: rgb(243, 207, 197);
+#self {
+    margin: 40px;
+    box-shadow: 40px 40px var(--black);
+    position: relative;
+    border-width:2px;
+    border-color:var(--black);
+    border-style:solid;
+    border-radius:5px;
 }
-.con {
-    background-color:rgb(230, 99, 95);
-    width: 500px;
-    height: 200px;
-    margin: auto;
-    color: rgb(243, 207, 197);
+
+#self2 {
+    border-width:2px;
+    border-color:var(--black);
+    border-style:solid;
+    border-radius:100%;
 }
-.proscons {
-    text-align: left;
+
+#portfolio-category {
+    background-color:var(--white);
+    padding: 50px;
+    margin: 40px;
+    border-color:var(--black);
+    border-style:solid;
+    border-width: 2px;
+    border-radius:5px;
+    justify-content: center;
 }
+
+#about-me {
+    background-color:var(--white);
+    padding: 50px;
+    margin: 40px;
+    border-color:var(--black);
+    border-style:solid;
+    border-width: 2px;
+    border-radius:5px;
+    text-align:left;
+}
+
+#icon {
+    margin-left: 5px;
+}
+
+hr {
+    border: 1px dashed var(--black);
+}
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .img-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
+  }
+  
+  .img-column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Scrollbar stuff */
+  ::-webkit-scrollbar-track {
+    background: var(--white); 
+    border-color: var(--black);
+    border-width: 2px;
+    border-style:solid;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--black);  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--black); 
+  }

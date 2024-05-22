@@ -1,68 +1,170 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us">
     <head>
-        <title>Joanne Lee's Website</title>
+        <title>Joanne Lee</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="scripts.js" defer></script>
     </head>
     <body>
         <div class="container">
+          <!--Website header-->
+          <div id="websiteheader">
+            <!--Navigation-->
+            <ul>
+              <li id="nav"><button><a href="#rest">✦ Home</a></button></li>
+              <li id="nav"><button><a href="#about-me">✦ About Me</a></button></li>
+              <li id="nav"><button><a href="#portfolio">✦ Portfolio</a></button></li>
+              <li style="float:right">JOANNE LEE</li>
+            </ul>
+          </div>
+
+          <!--Rest of the website-->
+          <div id="rest">
             <div class="row">
-                <div class="col-lg">
-                    <div id="websiteheader"><strong>></strong> JOANNE'S PAGE</div>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4"><div id="directory">
-                <h2>DIRECTORY</h2>
-                <hr>
-                <ul>
-                    <li><button><a href="index.html"><strong>></strong> HOME</a></button></li>
-                    <li><button><a href="page2.html"><strong>></strong> ARTWORK</a></button></li>
-                    <li><button><a href="page3.html"><strong>></strong> SOMETHING</a></button></li>
-                </ul>
+              <div class="col-lg-4">
+                <img src='images\Self\self.jpeg' id = "self" alt='Self image' class="img-fluid", width="300">
               </div>
-            </div>
+
               <div class="col-lg-8"><div id="pagetitle">
-                <h1>HOME</h1>
-            </div></div>
+                <h1>JOANNE LEE</h1>
+                ✦ ✦ ✦<br><br>
+                <p>Hello! I'm a rising sophomore at the University of Maryland, College Park pursuing my Bachelor's degree in Computer Science.
+                  As a programmer and artist, I'm passionate about exploring the intersection between coding and design.
+                  <br><br>Feel free to reach out to me through LinkedIn or my email below! <span id="blink">|</span>
+                </p>
+                  <button id="blue"><a href="https://www.linkedin.com/in/joanne-lee-27aa5b290/" target=”_blank”>LinkedIn</a><img src='images\Icons\LinkedIn.png' id="icon" alt='LinkedIn' width="20"></button>
+                  <button id="blue"><a href="https://github.com/Joanne-Lee20" target=”_blank”>GitHub</a><img src='images\Icons\Github.png' id="icon" alt='Github' width="25"></button>
+                  <button id="blue"><a href="mailto:joanneynlee@gmail.com" target=”_blank”>Email</a><img src='images\Icons\Email.png' id="icon" alt='Email' width="25"></button>
+                </ul>
+              </div></div>
+            
             </div>
-            <div class="row">
-              <div class="col-lg">
-                <div id="mainbox">
-                    <h3>ABOUT ME</h3>
-                    <span id="greencolorsquare">.</span><span id="pinkcolorsquare">.</span><span id="yellowcolorsquare">.</span>
-                    <p>Hello! I'm Joanne Lee.<span id="blink">|</span></p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="con">
-                          <br>
-                          <p>
-                            Some things I'm not:
-                            <ul>
-                              <li class="proscons">> A good singer</li>
-                              <li class="proscons">> Able to drive (learning though!)</li>
-                            </ul>
-                          </p>
-                        </div>
+
+            <!--About Me Section-->
+            <div class="row" id="about-me">
+                <div class="col-lg-8">
+                  <h2 id="about-me-h2">ABOUT ME</h2>
+                <p>
+                  ✦ ✦ ✦<br><br>
+                  I took my first Java class in high school, but I began my coding journey by making dress-up games using Scratch in elementary school. I specialize in web and app development, working with HTML, CSS, Python Flask, JavaScript, and frameworks such as Bootstrap. Both in and out of the classroom, I strive to learn new programming concepts and bring my ideas to life.
+                  As a member of the UMD Honors College (DCC Living Learning Program), the QUEST Honors Program, Kappa Phi Lambda Sorority Inc., and hackathon organizing teams, I value opportunities to collaborate on innovative projects that foster personal and professional growth.
+                  <div class="expandable">
+                    <div class="expandable__title-bar">
+                      <span class="expandable__title"><strong>Hobbies</strong></span>
+                      <ion-icon class="expandable_icon" name="chevron-back"></ion-icon>
+                    </div>
+                    <div class="expandable__content-wrapper">
+                      <div class="expandable__content">
+                        <p>
+                          <ul>
+                            <li>✦ Creating digital art</li>
+                            <li>✦Learning new songs on the piano</li>
+                            <li>✦ Playing badminton</li>
+                          </ul>
+                        </p>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="pro">
-                          <br>
-                          <p>
-                            Some things I am:
-                            <ul>
-                              <li class="proscons">> A piano player</li>
-                              <li class="proscons">> 16 (rising junior)</li>
-                              <li class="proscons">> A digital artist</li>
-                              <li class="proscons">> Korean American</li>
-                            </ul>
-                          </p>
-                        </div>
-                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="col-lg-4">
+                  <img src='images\Self\Self2.jpeg' id = "self2" alt='Self image' class="img-fluid">
+                </div>
             </div>
+
+            <!--Portfolio-->
+            <div class="row" id="portfolio">
+              <div class="col-lg"><div id="mainbox">
+                <h2>PORTFOLIO</h2>
+                <p>
+                  ✦ ✦ ✦<br><br>
+                  Here is some of my work:
+                </p>
+                <div id="portfolio-category">
+                  <h3>Organization Work</h3>
+                  <div class="img-row">
+                    <div class="img-column">
+                      <img src="images\Orgs\stemfest.png">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Orgs\quhacksposter.png">
+                      <img src="images\Orgs\quhackslogo.jpg">
+                      <img src="images\Orgs\quhackslogo2.jpg">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Orgs\wireframe.png">
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio-category">
+                  <h3>Digital Illustrations</h3>
+                  <div class="img-row">
+                    <div class="img-column">
+                      <img src="images\Digital\webtoon.png">
+                      <img src="images\Digital\gameover.png">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Digital\school.jpeg">
+                      <img src="images\Digital\name.png">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Digital\screen.png">
+                      <img src="images\Digital\playground.png">
+                      <img src="images\origami.jpeg">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Digital\playground.png">
+                      <img src="images\Digital\room.png">
+                      <img src="images\Digital\dodge.png">
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio-category">
+                  <h3>Physical Artwork</h3>
+                  <div class="img-row">
+                    <div class="img-column">
+                      <img src="images\Physical\birthday.jpg">
+                      <img src="images\Physical\birds.jpg">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Physical\culture.jpg">
+                      <img src="images\Physical\museum.jpg">
+                    </div>
+                    <div class="img-column">
+                      <img src="images\Physical\piano.jpg">
+                      <img src="images\Physical\clothing.jpeg">
+                      <img src="images\Physical\origami.jpeg">
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio-category">
+                  <h3>Animations and Video</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img src='images\Videos\animation1.gif' alt='Animation' width=350>
+                      <video width=350 controls="controls" preload="none">
+                        <source src="images\Videos\animation2.mp4">
+                      </video>
+                    </div>
+                    <div class="col-lg-6">
+                      <video width=350 controls="controls" preload="none">
+                        <source src="images\Videos\game.mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+
+          </div>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+
           </div>
     </body>
 </html>
