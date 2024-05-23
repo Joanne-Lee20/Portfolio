@@ -11,10 +11,11 @@
           <div id="websiteheader">
             <!--Navigation-->
             <ul>
-              <li id="nav"><button><a href="#rest">HOME</a></button></li>
-              <li id="nav"><button><a href="#about-me">ABOUT</a></button></li>
-              <li id="nav"><button><a href="#portfolio">PORTFOLIO</a></button></li>
-              <li style="float:right">JOANNE LEE</li>
+              <li id="nav"><a href="#rest"><button><strong>HOME</strong></button></a></li>
+              <li id="nav"><a href="#about-me"><button><strong>ABOUT</strong></button></a></li>
+              <li id="nav"><a href="#portfolio"><button><strong>PORTFOLIO</strong></button></a></li>
+              <li id="nav"><a href="#credits"><button><strong>CREDITS</strong></button></a></li>
+              <li id="right-nav" style="float:right"><a href="#home">✦ JOANNEYNLEE.COM</a></li>
             </ul>
           </div>
 
@@ -22,20 +23,27 @@
           <div id="rest">
             <div class="row">
               <div class="col-lg-4">
-                <img src='images\Self\self.jpeg' id = "self" alt='Self image' class="img-fluid", width="300">
+                <img src='images\Self\self.jpeg' id = "self" alt='Self image' class="img-fluid">
               </div>
 
               <div class="col-lg-8"><div id="pagetitle">
                 <h1>JOANNE LEE</h1>
-                ✦ ✦ ✦<br><br>
-                <p>Hello! I'm a rising sophomore at the University of Maryland, College Park pursuing my Bachelor's degree in Computer Science.
-                  As a programmer and artist, I'm passionate about exploring the intersection between coding and design.
-                  <br><br>Feel free to reach out to me through LinkedIn or my email below! <span id="blink">|</span>
+                ✦ ✦ ✦<br>
+                <p id="left">Hello! I'm a rising sophomore at the University of Maryland, College Park pursuing my Bachelor's degree in Computer Science.
+                  As a programmer and artist, I'm passionate about exploring the limitless intersections between coding and design. 
                 </p>
-                  <button id="blue"><a href="https://www.linkedin.com/in/joanne-lee-27aa5b290/" target=”_blank”>LINKEDIN</a><img src='images\Icons\LinkedIn.png' id="icon" alt='LinkedIn' width="20"></button>
-                  <button id="blue"><a href="https://github.com/Joanne-Lee20" target=”_blank”>GITHUB</a><img src='images\Icons\Github.png' id="icon" alt='Github' width="25"></button>
-                  <button id="blue"><a href="mailto:joanneynlee@gmail.com" target=”_blank”>EMAIL</a><img src='images\Icons\Email.png' id="icon" alt='Email' width="25"></button>
+                <p>
+                  <br>✦ Feel free to reach out to me through my LinkedIn or email (joanneynlee@gmail.com)! <span id="blink">|</span>
+                </p>
                 </ul>
+                  <a href="https://www.linkedin.com/in/joanne-lee-27aa5b290/" target=”_blank”><button id="blue"><strong>LINKEDIN</strong><img src='images\Icons\LinkedIn.png' id="icon" alt='LinkedIn' width="20"></button></a>
+                  <div id="divider"></div>
+                  <a href="https://github.com/Joanne-Lee20" target=”_blank”><button id="blue"><strong>GITHUB</strong><img src='images\Icons\Github.png' id="icon" alt='Github' width="25"></button></a>
+                  <div id="divider"></div>
+                  <a href="mailto:joanneynlee@gmail.com" target=”_blank”><button id="blue"><strong>EMAIL</strong><img src='images\Icons\Email.png' id="icon" alt='Email' width="25"></button></a>
+                  <div id="divider"></div>
+                </ul>
+
               </div></div>
             
             </div>
@@ -44,7 +52,7 @@
             <div class="row" id="about-me">
                 <div class="col-lg-8">
                   <h2 id="about-me-h2">ABOUT ME</h2>
-                  ✦ ✦ ✦<br><br>
+                  ✦ ✦ ✦<br>
                   <div class="expandable">
                     <div class="expandable__title-bar">
                       <span class="expandable__title"><strong>CODING JOURNEY</strong></span>
@@ -53,7 +61,7 @@
                     <div class="expandable__content-wrapper">
                       <div class="expandable__content">
                         <p>
-                          My coding journey began when I started creating dress-up games for fun using Scratch in elementary school. I self-studied website development in middle school, and after taking a year to realize engineering wasn't for me, I took my first coding class in my sophomore year of high school: Principles of Java. Since then, I've studied object-oriented programming in Java, C, C++, and Python. I specialize in web and app development, and I've worked with HTML, CSS, Python Flask, JavaScript, and frameworks such as Bootstrap. Both in and out of the classroom, I strive to learn new programming concepts and bring my ideas to life.
+                          My coding journey began when I started creating dress-up games for fun using Scratch in elementary school. I self-studied website development in middle school, and after taking a year to realize engineering wasn't for me, I took my first coding class in my sophomore year of high school: Principles of Java. <br><br>Since then, I've studied object-oriented programming in Java, C, C++, and Python. I specialize in web and app development, and I've worked with HTML, CSS, Python Flask, JavaScript, and frameworks such as Bootstrap. Both in and out of the classroom, I strive to learn new programming concepts and bring my ideas to life.
                         </p>
                       </div>
                     </div>
@@ -88,8 +96,10 @@
                         <p>
                           Some things I like to do other than code:
                           <ul>
-                            <li>✦ Create digital art</li>
+                            <li>✦ Create digital art and animations</li>
                             <li>✦ Learn new songs on the piano</li>
+                            <li>✦ Listen to video essays (usually on books, movies, and video games)</li>
+                            <li>✦ Drink matcha + red bean boba</li>
                             <li>✦ Play badminton</li>
                           </ul>
                         </p>
@@ -108,27 +118,112 @@
                 <h2>PORTFOLIO</h2>
                 <p>
                   ✦ ✦ ✦<br><br>
-                  Here are some coding, design, and art projects I've completed over the course of 2022 - 2024.
+                  Here are some coding, design, and art projects I've completed over the course of 2022 - 2024. <span id="blink">|</span>
                 </p>
-
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
-                    <span class="expandable2__title"><h3>ORGS</h3></span>
+                    <span class="expandable2__title"><h3>CODE</h3></span>
                     <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
-                      <div class="img-row">
-                        <div class="img-column">
-                          <img src="images\Orgs\stemfest.png">
+                      <div class="row">
+                        <div class="col-md-6">
+                      
+                          <div id="card">
+                            <img src="images\Code\portfolio.png" alt='Animation' id="card-image">
+                            <div id="card-text">
+                              <h4>THIS WEBSITE</h4>
+                              <p>Developed a portfolio website to store and display my projects.</p>
+                            </div>
+                          </div>
+
+                          <a href="https://joanne-lee20.github.io/Differentiation/" target=”_blank”><div id="card">
+                            <img src="images\Code\differentiation.png" alt='Animation' id="card-image">
+                            <div id="card-text">
+                              <h4>DIFFERENTIATION</h4>
+                              <p>Developed a website that explains the calculus concept of differentiation.</p>
+                              <p id="small"><b><u>[ CLICK TO VISIT ]</u></b></p>
+                            </div>
+                          </div></a>
+
                         </div>
-                        <div class="img-column">
-                          <img src="images\Orgs\quhacksposter.png">
-                          <img src="images\Orgs\quhackslogo.jpg">
-                          <img src="images\Orgs\quhackslogo2.jpg">
+                        <div class="col-md-6">
+                          <a href="https://bit.camp/" target=”_blank”><div id="card">
+                            <video controls="controls" poster="images\Code\bitcamp.png" preload="none" id="card-image">
+                              <source src="images\Code\bitcamp.mp4">
+                            </video>
+                            <div id="card-text">
+                              <h4>BITCAMP 2024</h4>
+                              <p>Worked on the front-end development of the registration and event websites in addition to the mobile app (demonstrated above).</p>
+                              <p id="small"><b><u>[ CLICK TO VISIT ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://joanne-lee20.github.io/Art/" target=”_blank”><div id="card">
+                            <img src="images\Code\art.png" alt='Animation' id="card-image">
+                            <div id="card-text">
+                              <h4>ART PORTFOLIO</h4>
+                              <p>Developed a website to store and display information about my past art projects.</p>
+                              <p id="small"><b><u>[ CLICK TO VISIT ]</u></b></p>
+                            </div>
+                          </div></a>
+
                         </div>
-                        <div class="img-column">
-                          <img src="images\Orgs\wireframe.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="expandable2">
+                  <div class="expandable2__title-bar">
+                    <span class="expandable2__title"><h3>ORGANIZATION</h3></span>
+                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                  </div>
+                  <div class="expandable2__content-wrapper">
+                    <div class="expandable2__content">
+                      <div class="row">
+                        <div class="col-md-6">
+                      
+                          <a href="https://drive.google.com/file/d/13sdtkmRlF4dJ_WpcPOS9fX21fMAlm8Xh/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Orgs\quhacksposter.png" id="card-image">
+                            <div id="card-text">
+                              <h4>POSTER (QUHACKS)</h4>
+                              <p>Created a poster to advertise the QuHacks Hackathon using Canva.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1d1USeZPEYAmRVXelazhkNyCL6Okm8HxM/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Orgs\stemfest.png" id="card-image">
+                            <div id="card-text">
+                              <h4>INSTAGRAM POST (MD STEM FEST)</h4>
+                              <p>Created educational instagram posts for the Maryland STEM Festival Instagram account.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                        </div>
+                        <div class="col-md-6">
+
+                          <a href="https://drive.google.com/file/d/1NXRbBIq0LhfoCfBpF46DqQwtHnyz55lv/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Orgs\quhackslogo.jpg" id="card-image">
+                            <div id="card-text">
+                              <h4>LOGO (QUHACKS)</h4>
+                              <p>Designed the official logo for QuHacks using the lvllvl textmode art tool.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1MQEojhZfT4Yfg5wdnBu3EDa4KFFzpVun/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Orgs\wireframe.png" id="card-image">
+                            <div id="card-text">
+                              <h4>LO-FI WIREFRAME (TECHNICA)</h4>
+                              <p>Developed a lo-fi wireframe for the potential design of Technica's 2024 website.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
                         </div>
                       </div>
                     </div>
@@ -142,24 +237,63 @@
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
-                      <div class="img-row">
-                        <div class="img-column">
-                          <img src="images\Digital\webtoon.png">
-                          <img src="images\Digital\gameover.png">
+                      <div class="row">
+                        <div class="col-md-6">
+                      
+                          <a href="https://drive.google.com/file/d/1C868zsn2LvTYOfQclTUJg3tEiEQo484I/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Digital\webtoon.png" id="card-image">
+                            <div id="card-text">
+                              <h4>WEBTOON COVER (MODEL MINORITY)</h4>
+                              <p>Created a cover for a personal webtoon project (in development) using FireAlpaca.</p>
+                              <p id="small"><b><u>[ WANT TO SEE A PREVIEW? ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Digital\screen.png" id="card-image">
+                            <div id="card-text">
+                              <h4>SCREEN</h4>
+                              <p>Created a piece for my sustained investigation (AP Art IV) using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+                          
+                          <div id="card">
+                            <img src="images\Digital\name.png" id="card-image">
+                            <div id="card-text">
+                              <h4>NAME</h4>
+                              <p>Created a personal logo using FireAlpaca.</p>
+                            </div>
+                          </div>
+
                         </div>
-                        <div class="img-column">
-                          <img src="images\Digital\school.jpeg">
-                          <img src="images\Digital\name.png">
-                        </div>
-                        <div class="img-column">
-                          <img src="images\Digital\screen.png">
-                          <img src="images\Digital\playground.png">
-                          <img src="images\origami.jpeg">
-                        </div>
-                        <div class="img-column">
-                          <img src="images\Digital\playground.png">
-                          <img src="images\Digital\room.png">
-                          <img src="images\Digital\dodge.png">
+                        <div class="col-md-6">
+
+                          <a href="https://www.redbubble.com/people/asteraee/shop" target=”_blank”><div id="card">
+                            <img src="images\Digital\sticker.jpeg" id="card-image">
+                            <div id="card-text">
+                              <h4>MERCH DESIGN</h4>
+                              <p>Created a sticker design for my RedBubble store using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO VISIT MY STORE ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <div id="card">
+                            <img src="images\Digital\playground.png" id="card-image">
+                            <div id="card-text">
+                              <h4>PLAYGROUND MAP (HOMESICK)</h4>
+                              <p>Created a map for a personal game project using FireAlpaca .</p>
+                            </div>
+                          </div>
+
+                          <div id="card">
+                            <img src="images\Digital\school.jpeg" id="card-image">
+                            <div id="card-text">
+                              <h4>ACADEMIC STRESS</h4>
+                              <p>Created a graphic for a friend's article using the lvllvl textmode art tool.</p>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -173,21 +307,71 @@
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
-                      <div class="img-row">
-                        <div class="img-column">
-                          <img src="images\Physical\birthday.jpg">
-                          <img src="images\Physical\birds.jpg">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\birthday.jpg" id="card-image">
+                            <div id="card-text">
+                              <h4>PLEASE PASS THE CAKE</h4>
+                              <p>Painted using acrylic paint on matboard.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\origami.jpeg" id="card-image">
+                            <div id="card-text">
+                              <h4>PAPER STUDY</h4>
+                              <p>Created using colored pencils, watercolor paint, and acrylic paint on watercolor paper.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\clothing.jpeg" id="card-image">
+                            <div id="card-text">
+                              <h4>COMFORT CLOTHES</h4>
+                              <p>Drawn using oil pastels on black canvas paper.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+                          
+
                         </div>
-                        <div class="img-column">
-                          <img src="images\Physical\culture.jpg">
-                          <img src="images\Physical\museum.jpg">
-                        </div>
-                        <div class="img-column">
-                          <img src="images\Physical\piano.jpg">
-                          <img src="images\Physical\clothing.jpeg">
-                          <img src="images\Physical\origami.jpeg">
+                        <div class="col-md-6">
+
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\piano.jpg" id="card-image">
+                            <div id="card-text">
+                              <h4>FLUIDITY</h4>
+                              <p>Created using colored pencils and watercolor pencils on watercolor paper.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\culture.jpg" id="card-image">
+                            <div id="card-text">
+                              <h4>WATCH YOUR LANGUAGE</h4>
+                              <p>Created using oil paint and oil pastel on black canvas paper.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+                          
+                          <a href="https://drive.google.com/file/d/1K-rrFwOSgLoJZOvHj2njqhS7vxDen69u/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src="images\Physical\museum.jpg" id="card-image">
+                            <div id="card-text">
+                              <h4>LIVING ROOM MUSEUM</h4>
+                              <p>Drawn using black, brown, and white conte crayons on chalk paper.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW PORTFOLIO ]</u></b></p>
+                            </div>
+                          </div></a>
+
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -200,37 +384,62 @@
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
                       <div class="row">
-                        <div class="col-lg-6">
-                          <img src='images\Videos\animation1.gif' alt='Animation' width=350>
-                          <video width=350 controls="controls" preload="none">
-                            <source src="images\Videos\animation2.mp4">
-                          </video>
+                        <div class="col-md-6">
+                      
+                          <a href="https://drive.google.com/file/d/1ZcFQHDk49WG9FmvsSU9Yf-1yfOO6S6Pt/view?usp=sharing" target=”_blank”><div id="card">
+                            <img src='images\Videos\animation1.gif' alt='Animation' id="card-image">
+                            <div id="card-text">
+                              <h4>OPENING (HOMESICK)</h4>
+                              <p>Animated an opening scene for a personal video game project using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <a href="https://www.instagram.com/p/CRHMStKgSSJ/" target=”_blank”><div id="card">
+                            <video controls="controls" poster="images\Videos\gameover.png" preload="none" id="card-image">
+                              <source src="images\Videos\game.mp4">
+                            </video>
+                            <div id="card-text">
+                              <h4>GAME OVER</h4>
+                              <p>Animated using FireAlpaca; posted on art business Instagram.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW POST ]</u></b></p>
+                            </div>
+                          </div></a>
+
                         </div>
-                        <div class="col-lg-6">
-                          <video width=350 controls="controls" preload="none">
-                            <source src="images\Videos\game.mp4">
-                          </video>
+                        <div class="col-md-6">
+                          <a href="https://drive.google.com/file/d/1AiyWm9OOqXyb5iRJf3_YUgSj7tyPEszy/view?usp=sharing" target=”_blank”><div id="card">
+                            <video controls="controls" poster="images\Videos\ending.png" preload="none" id="card-image">
+                              <source src="images\Videos\animation2.mp4">
+                            </video>
+                            <div id="card-text">
+                              <h4>ENDING (HOMESICK)</h4>
+                              <p>Animated an ending scene for a personal video game project using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                            </div>
+                          </div></a>
+
+                          <div id="card">
+                            <video controls="controls" poster="images\Videos\speed.png" preload="none" id="card-image">
+                              <source src="images\Videos\draw.mp4">
+                            </video>
+                            <div id="card-text">
+                              <h4>ANIMATION PROCESS</h4>
+                              <p>Sped-up video of my animation process using FireAlpaca.</p>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="expandable2">
-                  <div class="expandable2__title-bar">
-                    <span class="expandable2__title"><h3>CODE - COMING SOON</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
-                  </div>
-                  <div class="expandable2__content-wrapper">
-                    <div class="expandable2__content">
-                      <p>
-                        Still in development - Feel free to check out my GitHub in the meantime: 
-                        <br><button id="blue"><a href="https://github.com/Joanne-Lee20" target=”_blank”>GITHUB</a><img src='images\Icons\Github.png' id="icon" alt='Github' width="25"></button>
-                      </p>
+
                     </div>
                   </div>
                 </div>
               </div></div>
             </div>
+          </div>
+          <div id="credits">
+            <p><strong>✦ CREDITS:</strong> I built this website in <a href="https://code.visualstudio.com/" target="_blank"><u>Visual Studio Code</u></a> using HTML/CSS, JavaScript, <a href="https://getbootstrap.com/" target="_blank"><u>Bootstrap</u></a>, and <a href="https://ionic.io/ionicons" target="_blank"><u>Ionicons</u></a> while frequently referencing resources on <a href="https://www.w3schools.com/" target="_blank"><u>W3Schools</u></a> and <a href="https://www.freecodecamp.org/" target="_blank"><u>freeCodeCamp</u></a> - still learning as I go, so modifications are on the way.</p>
           </div>
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

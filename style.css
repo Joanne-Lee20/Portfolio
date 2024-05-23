@@ -5,7 +5,7 @@
     --blue: #91a3bd;
     --gray: #b2becf;
     --pink: #e3c8c6;
-    --brown: #a3848a;
+    --brown: #8e7d86;
     --black: #35364A;
 }
 
@@ -18,18 +18,18 @@ body {
     background-color:var(--white);
     font-family: "Farro", sans-serif;
     font-weight: 800px;
-    margin-top: 10rem;
+    margin-top: 10vw;
     background-image:
         linear-gradient(to right, var(--gray) 1px, transparent 1px),
         linear-gradient(to bottom, var(--gray) 1px, transparent 1px);
     background-size: 2rem 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6vw;
 }
 
 #websiteheader {
     width: 100%;
     display: block;
-    padding: 5px;
+    padding: 1vw;
     margin: 0;
     background-color: var(--blue);
     color: var(--black);
@@ -49,19 +49,16 @@ body {
 }
 
 #pagetitle {
-    padding: 60px;
-    margin-top: 60px;
-    margin-right: 60px;
     text-align: center;
-    justify-content:center;
     background-color:var(--white);
     z-index: -50;
+    margin: 5em;
+    padding: 3em;
+    margin-bottom: 3em;
 }
 
-h1 {
-    font-size: 90px;
-    color: var(--black);
-    font-weight: 900px;
+#left {
+    text-align:left;
 }
 
 #directory {
@@ -69,10 +66,28 @@ h1 {
     margin-top: 20px;
 }
 
+h1 {
+    font-size: 4rem;
+    color: var(--black);
+    white-space: nowrap;
+    min-width:0;
+}
+
 h2 {
-    font-size: 60px;
+    font-size: 3.5rem;
     text-align: center;
     color: var(--black);
+    white-space: nowrap;
+    min-width:0;
+}
+
+h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+h4 {
+    font-size:2em;
 }
 
 #about-me-h2 {
@@ -93,6 +108,7 @@ a:hover {
 ul {
     list-style-type: none;
     overflow: hidden;
+    margin-right: 10px;
 }
 
 #nav {
@@ -102,15 +118,18 @@ ul {
 button {
     margin-top: 10px;
     background-color:var(--white);
-    border: solid;
-    border-width: 2px;
     transition: all 0.2s;
-    border-radius:5px;
     color: var(--black);
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    margin-right:20px;
+    margin-right:10px;
+    width:130px;
+}
+
+#divider {
+    margin-right: 10px;
+    display:inline;
 }
 
 button:hover {
@@ -127,11 +146,6 @@ button:active {
     margin:20px;
 }
 
-h3 {
-    color: var(--black);
-    font-size: 50px;
-}
-
 #blink {
     animation: blink 0.3s;
     animation-direction: alternate;
@@ -146,6 +160,7 @@ h3 {
 
 #blue {
     background-color: var(--gray);
+    margin-right:0;
 }
 
 p {
@@ -153,36 +168,21 @@ p {
 }
 
 #self {
-    margin: 60px;
-    box-shadow: 40px 40px var(--black);
-    position: relative;
-    border-width:2px;
-    border-color:var(--black);
-    border-style:solid;
-    border-radius:5px;
+    margin: 5rem;
+    margin-bottom:0;
+    box-shadow: 10px 10px var(--black);
+    width: 350px;
 }
 
 #self2 {
-    border-width:2px;
-    border-color:var(--black);
-    border-style:solid;
-    border-radius:100%;
-}
-
-#portfolio-category {
-    background-color:var(--white);
-    padding: 50px;
-    margin: 40px;
-    border-color:var(--black);
-    border-style:solid;
-    border-width: 2px;
-    border-radius:5px;
-    justify-content: center;
-}
+    box-shadow: 10px 10px var(--black);
+    margin: 2rem;
+    width: 250px;
+  }
 
 #about-me {
     background-color:var(--white);
-    padding: 50px;
+    padding: 3em;
     margin: 5rem;
     margin-bottom:60px;
     border-color:var(--black);
@@ -200,6 +200,50 @@ p {
     display: flex;
     flex-wrap: wrap;
     padding: 0 5px;
+}
+
+#card {
+    padding: 0rem;
+    background-color: var(--white);
+    margin: 2rem;
+    margin-bottom:4rem;
+    max-width:30rem;
+    min-width:20rem;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--brown);
+    transition: all 0.3s ease;
+}
+
+#card-image {
+    width: 100%;
+    height: 20rem;
+    display: block;
+    object-fit: cover;
+    overflow:hidden;
+}
+
+#card-text {
+    border-top: 2px solid var(--black);
+    text-align:left;
+    padding: 1rem;
+}
+
+#card:hover {
+    filter: drop-shadow(0 5px 20px var(--brown)); 
+    transform: translate(0, -0.3rem);
+}
+
+#small {
+    font-size: 0.9em;
+    text-align:center;
+}
+
+#credits {
+    margin-top: 2em;
+    background-color: var(--gray);
+    box-shadow: 10px 10px var(--black);
+    padding: 2rem;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -224,9 +268,7 @@ p {
 
 ::-webkit-scrollbar-track {
     background: var(--white); 
-    border-color: var(--black);
-    border-width: 2px;
-    border-style: solid;    
+    border: 2px solid var(--black);  
 }
 
 ::-webkit-scrollbar-thumb {
@@ -242,7 +284,7 @@ p {
 .expandable {
     --xy-padding: 18px;
     --border-radius: 5px;
-    max-width: 550px;
+    max-width: 35rem;
     margin: 1em 0;
     --transition-icon: 0.3s;
 }
@@ -257,6 +299,14 @@ p {
 
 .expandable__icon {
     transition: transform var(--transition-icon);
+}
+
+.expandable--open .expandable__title-bar {
+    color: var(--white);
+}
+
+.expandable__title-bar:hover {
+    color: var(--white);
 }
 
 .expandable__title-bar {
@@ -355,38 +405,69 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+    body {
+        margin-top: 20vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
     h3 {
-      font-size: 30px;
+        font-size: 1.8rem;
     }
-
-    #pagetitle {
-        width:80%;
-    }
-
     #about-me {
         text-align:center;
+        padding: 1em;
+        margin: 1em;
     }
     #about-me-h2 {
         text-align:center;
+        margin-top: 1em;
     }
 
     .expandable__content {
         text-align:left;
     }
+    #self {
+        width:50%;
+        margin:1rem;
+        margin-top:5rem;
+    }
+    #self2{
+        width: 70%;
+    }
+    #card {
+        margin: 2rem 0;
+    }
+    #pagetitle {
+        margin: 1em;
+    }
+
+    .expandable2 {
+        margin: 1em 0;
+    }
+
+    button {
+        width: 90%;
+    }
+    #left {
+        text-align: center;
+    }
+    #right-nav {
+        width:0;
+        visibility: hidden;
+    }
 }
 
-@media screen and (max-width: 480px) {
-    h3 {
-        font-size: 25px;
-    }
+@media screen and (max-width: 500px) {
     #about-me-h2 {
         font-size:40px;
-    }
-    .expandable2__icon {
-        visibility:hidden;
     }
     .expandable2__title-bar {
         padding: 15px;
         padding-top:20px;
+        text-align:center;
     }
 }
