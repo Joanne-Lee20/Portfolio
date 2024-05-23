@@ -450,11 +450,13 @@ p {
         width: 50%;
     }
     #card {
-        display:block;
         margin: 2rem 0;
         p {
             font-size: 0.9em;
         }
+    }
+    #card-image {
+        height:15em;
     }
     #pagetitle {
         margin: 2.5em;
