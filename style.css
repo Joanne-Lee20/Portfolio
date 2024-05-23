@@ -207,8 +207,6 @@ p {
     background-color: var(--white);
     margin: 2rem;
     margin-bottom:4rem;
-    max-width:30rem;
-    min-width:20rem;
     border: 2px solid var(--black);
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--brown);
@@ -404,9 +402,14 @@ p {
     transition: grid-template-rows 0.3s ease-out;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1060px) {
+
+}
+
+@media screen and (max-width: 960px) {
     body {
         margin-top: 20vw;
+        background-color:var(--black);
     }
     h1 {
         font-size: 2.5rem;
@@ -417,10 +420,13 @@ p {
     h3 {
         font-size: 1.8rem;
     }
+    h4 {
+        font-size:1.5em;
+    }
     #about-me {
         text-align:center;
         padding: 1em;
-        margin: 1em;
+        margin: 2.5em;
     }
     #about-me-h2 {
         text-align:center;
@@ -431,22 +437,25 @@ p {
         text-align:left;
     }
     #self {
-        width:50%;
+        width:40%;
         margin:1rem;
         margin-top:5rem;
     }
     #self2{
-        width: 70%;
+        width: 50%;
     }
     #card {
         margin: 2rem 0;
+        p {
+            font-size: 0.9em;
+        }
     }
     #pagetitle {
-        margin: 1em;
+        margin: 2.5em;
     }
 
     .expandable2 {
-        margin: 1em 0;
+        margin: 2em;
     }
 
     button {
@@ -461,7 +470,8 @@ p {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+
     #about-me-h2 {
         font-size:40px;
     }
@@ -469,5 +479,9 @@ p {
         padding: 15px;
         padding-top:20px;
         text-align:center;
+    }
+    body {
+        background-color:var(--black);
+
     }
 }
