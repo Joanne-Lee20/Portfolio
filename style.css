@@ -402,6 +402,16 @@ p {
     transition: grid-template-rows 0.3s ease-out;
 }
 
+@media screen and (max-width: 2500px) {
+    #card {
+        display:block;
+        margin: 2rem 0;
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
+
 @media screen and (max-width: 960px) {
     body {
         margin-top: 20vw;
@@ -440,6 +450,7 @@ p {
         width: 50%;
     }
     #card {
+        display:block;
         margin: 2rem 0;
         p {
             font-size: 0.9em;
