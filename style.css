@@ -402,14 +402,9 @@ p {
     transition: grid-template-rows 0.3s ease-out;
 }
 
-@media screen and (max-width: 1060px) {
-
-}
-
 @media screen and (max-width: 960px) {
     body {
         margin-top: 20vw;
-        background-color:var(--black);
     }
     h1 {
         font-size: 2.5rem;
@@ -479,9 +474,5 @@ p {
         padding: 15px;
         padding-top:20px;
         text-align:center;
-    }
-    body {
-        background-color:var(--black);
-
     }
 }
