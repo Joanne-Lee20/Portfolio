@@ -205,8 +205,8 @@ p {
 #card {
     padding: 0rem;
     background-color: var(--white);
-    margin: 2rem;
-    margin-bottom:4rem;
+    margin: 1.5rem;
+    margin-bottom:2.5rem;
     border: 2px solid var(--black);
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--brown);
@@ -215,7 +215,7 @@ p {
 
 #card-image {
     width: 100%;
-    height: 20rem;
+    height: 15rem;
     display: block;
     object-fit: cover;
     overflow:hidden;
@@ -391,7 +391,7 @@ p {
 }
 
 .expandable2__content {
-    padding: 0 50px;
+    padding: 0 2rem;
     background-color:var(--white);
     overflow: hidden;
 }
@@ -402,17 +402,7 @@ p {
     transition: grid-template-rows 0.3s ease-out;
 }
 
-@media screen and (max-width: 2500px) {
-    #card {
-        display:block;
-        margin: 2rem 0;
-        p {
-            font-size: 0.9em;
-        }
-    }
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     body {
         margin-top: 20vw;
     }
@@ -475,17 +465,5 @@ p {
     #right-nav {
         width:0;
         visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    #about-me-h2 {
-        font-size:40px;
-    }
-    .expandable2__title-bar {
-        padding: 15px;
-        padding-top:20px;
-        text-align:center;
     }
 }
