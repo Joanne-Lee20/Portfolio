@@ -1,12 +1,17 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Questrial&family=Tenor+Sans&display=swap');
+
 /*Colors*/
 :root {
-    --white: #F3E1E4;
-    --blue: #91a3bd;
-    --gray: #b2becf;
-    --pink: #e3c6cb;
-    --brown: #8e7d86;
-    --black: #35364A;
+    --white: #eee0e2;
+    --blue: #7f8ca0;
+    --gray: #b3bbc7;
+    --pink: #d7c1c7;
+    --brown: #ae959c;
+    --black: #211b2b;
 }
 
 html {
@@ -16,14 +21,13 @@ html {
 body {
     text-align: center;
     background-color:var(--white);
-    font-family: "Farro", sans-serif;
-    font-weight: 800px;
+    font-family: "Questrial", sans-serif;
+    font-size: 110%;
     margin-top: 10vw;
     background-image:
         linear-gradient(to right, var(--gray) 1px, transparent 1px),
         linear-gradient(to bottom, var(--gray) 1px, transparent 1px);
     background-size: 2rem 2rem;
-    margin-bottom: 6vw;
 }
 
 #websiteheader {
@@ -34,12 +38,12 @@ body {
     background-color: var(--blue);
     color: var(--black);
     text-align:center;
-    font-weight: 700;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 50;
+    border-bottom: 2px solid var(--black);
 }
 
 #rest {
@@ -48,12 +52,22 @@ body {
     padding-bottom: 60px;
 }
 
+#title {
+    background-color: var(--brown);
+    max-width: 100%;
+    margin: 2rem;
+    margin-bottom: 0;
+    text-align:center;
+    padding: 1rem;
+}
+
 #pagetitle {
     text-align: center;
     background-color:var(--white);
     z-index: -50;
     margin: 5em;
     padding: 3em;
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -67,14 +81,20 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
-    color: var(--black);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 8vw;
+    color: var(--white);
     white-space: nowrap;
     min-width:0;
+    letter-spacing: 2.5vw;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 1vw;
     text-align: center;
     color: var(--black);
     white-space: nowrap;
@@ -82,12 +102,14 @@ h2 {
 }
 
 h3 {
+    font-weight: bold;
     color: var(--black);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5vw;
 }
 
 h4 {
-    font-size:2em;
+    font-size:2vw;
 }
 
 #about-me-h2 {
@@ -96,13 +118,12 @@ h4 {
 
 a {
     text-decoration:none;
-    font-size:15px;
-    color: var(--black);
+    color: inherit;
     text-align: center;
 }
 
 a:hover {
-    color:var(--black);
+    color:inherit;
 }
 
 ul {
@@ -124,7 +145,7 @@ button {
     padding: 10px 15px;
     text-decoration: none;
     margin-right:10px;
-    width:130px;
+    width:140px;
 }
 
 #divider {
@@ -147,7 +168,7 @@ button:active {
 }
 
 #blink {
-    animation: blink 0.3s;
+    animation: blink 0.4s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: none;
@@ -168,10 +189,8 @@ p {
 }
 
 #self {
-    margin: 5rem;
-    margin-bottom:0;
-    box-shadow: 10px 10px var(--black);
-    width: 350px;
+    margin: 3rem 5rem;
+    width: 23vw;
 }
 
 #self2 {
@@ -185,7 +204,7 @@ p {
     padding: 3em;
     margin: 5rem;
     margin-bottom:60px;
-    border-color:var(--black);
+    border-color:var(--brown);
     border-style:solid;
     border-width: 2px;
     border-radius:5px;
@@ -211,6 +230,8 @@ p {
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--brown);
     transition: all 0.3s ease;
+    height: 28rem;
+    overflow:hidden;
 }
 
 #card-image {
@@ -233,15 +254,27 @@ p {
 }
 
 #small {
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align:center;
 }
 
 #credits {
     margin-top: 2em;
-    background-color: var(--gray);
-    box-shadow: 10px 10px var(--black);
+    color: var(--white);
+    background-color: var(--brown);
+    width:100%;
     padding: 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display:block;
+}
+
+#right-nav {
+    color: var(--white);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -281,7 +314,6 @@ p {
 
 .expandable {
     --xy-padding: 18px;
-    --border-radius: 5px;
     max-width: 35rem;
     margin: 1em 0;
     --transition-icon: 0.3s;
@@ -300,11 +332,11 @@ p {
 }
 
 .expandable--open .expandable__title-bar {
-    color: var(--white);
+    text-decoration:underline;
 }
 
 .expandable__title-bar:hover {
-    color: var(--white);
+    text-decoration:underline;
 }
 
 .expandable__title-bar {
@@ -314,7 +346,6 @@ p {
     padding: var(--xy-padding);
     user-select:none;
     background-color:var(--gray);
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
     cursor:pointer;
 }
 
@@ -323,7 +354,6 @@ p {
     font-size:0.85em;
     border: 2px solid var(--gray);
     border-top: none;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
     overflow: hidden;
 }
 
@@ -337,7 +367,6 @@ p {
 
 .expandable2 {
     --xy-padding: 10px;
-    --border-radius: 5px;
     max-width: auto;
     margin: 1em 5rem;
     --transition-icon: 0.3s;
@@ -365,7 +394,7 @@ p {
     justify-content:space-between;
     user-select:none;
     cursor:pointer;
-    padding: 50px;
+    padding: 30px;
     background-color:var(--white);
 }
 
@@ -406,8 +435,12 @@ p {
     body {
         margin-top: 20vw;
     }
+    #title {
+        margin: 1.5em;
+        margin-bottom: 1rem;
+    }
     h1 {
-        font-size: 2.5rem;
+        letter-spacing: 0.6rem;
     }
     h2 {
         font-size: 2.5rem;
@@ -432,17 +465,20 @@ p {
         text-align:left;
     }
     #self {
-        width:40%;
-        margin:1rem;
-        margin-top:5rem;
+        width:60%;
+        margin-top:2rem;
     }
     #self2{
         width: 50%;
     }
     #card {
         margin: 2rem 0;
+        height:32rem;
         p {
             font-size: 0.9em;
+        }
+        #small {
+            font-size: 0.7em;
         }
     }
     #card-image {
@@ -455,15 +491,23 @@ p {
     .expandable2 {
         margin: 2em;
     }
-
+    #nav {
+        float: 0;
+    }
     button {
-        width: 90%;
+        width: 95%;
+        font-size: 80%;
+        margin-right:15px;
     }
     #left {
         text-align: center;
     }
-    #right-nav {
+    #right-nav-whole {
         width:0;
         visibility: hidden;
+    }
+    #credits {
+        font-size: 90%;
+        padding-bottom: 1.5rem;
     }
 }

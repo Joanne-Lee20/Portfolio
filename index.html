@@ -15,24 +15,29 @@
               <li id="nav"><a href="#about-me"><button><strong>ABOUT</strong></button></a></li>
               <li id="nav"><a href="#portfolio"><button><strong>PORTFOLIO</strong></button></a></li>
               <li id="nav"><a href="#credits"><button><strong>CREDITS</strong></button></a></li>
-              <li id="right-nav" style="float:right"><a href="#home">✦ JOANNEYNLEE.COM</a></li>
+              <li id="right-nav-whole" style="float:right"><a href="#home" id="right-nav">✦ JOANNEYNLEE.COM</a></li>
             </ul>
           </div>
 
           <!--Rest of the website-->
           <div id="rest">
             <div class="row">
+              <div class="col-lg">
+                <div id="title"><h1>JOANNE LEE</h1></div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-lg-4">
-                <img src='images\Self\self.jpeg' id = "self" alt='Self image' class="img-fluid">
+                <img src='images\Self\hello.png' id = "self" alt='computer image' class="img-fluid">
               </div>
 
               <div class="col-lg-8"><div id="pagetitle">
-                <h1>JOANNE LEE</h1>
-                <p><strong>STUDENT ✦ PROGRAMMER ✦ ARTIST</strong>  
+                <h3><strong>STUDENT.<br>PROGRAMMER.<br>ARTIST.<span id="blink">|</span></strong></h3>
+                <br>
+                <h4>✦ ✦ ✦</h4>
+                <br>
                 <p>
-                <img src='images\Self\animation.gif' alt='Self image' class="img-fluid" width="200px">
-                <p>
-                  ✦ Feel free to reach out to me through my LinkedIn or email (joanneynlee@gmail.com)! <span id="blink">|</span>
+                  Feel free to reach out to me through my LinkedIn or email (joanneynlee@gmail.com)!
                 </p>
                 </ul>
                   <a href="https://www.linkedin.com/in/joanne-lee-27aa5b290/" target=”_blank”><button id="blue"><strong>LINKEDIN</strong><img src='images\Icons\LinkedIn.png' id="icon" alt='LinkedIn' width="20"></button></a>
@@ -51,11 +56,12 @@
             <div class="row" id="about-me">
                 <div class="col-lg-8">
                   <h2 id="about-me-h2">ABOUT ME</h2>
-                  ✦ ✦ ✦<br>
+                  <hr>
+                  <br>
                   <div class="expandable">
                     <div class="expandable__title-bar">
                       <span class="expandable__title"><strong>CODING JOURNEY</strong></span>
-                      <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                      <ion-icon class="expandable__icon" name="caret-back-outline"></ion-icon>
                     </div>
                     <div class="expandable__content-wrapper">
                       <div class="expandable__content">
@@ -68,7 +74,7 @@
                   <div class="expandable">
                     <div class="expandable__title-bar">
                       <span class="expandable__title"><strong>EDUCATION</strong></span>
-                      <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                      <ion-icon class="expandable__icon" name="caret-back-outline"></ion-icon>
                     </div>
                     <div class="expandable__content-wrapper">
                       <div class="expandable__content">
@@ -88,7 +94,7 @@
                   <div class="expandable">
                     <div class="expandable__title-bar">
                       <span class="expandable__title"><strong>HOBBIES</strong></span>
-                      <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                      <ion-icon class="expandable__icon" name="caret-back-outline"></ion-icon>
                     </div>
                     <div class="expandable__content-wrapper">
                       <div class="expandable__content">
@@ -115,14 +121,12 @@
             <div class="row" id="portfolio">
               <div class="col-lg"><div id="mainbox">
                 <h2>PORTFOLIO</h2>
-                <p>
-                  ✦ ✦ ✦<br><br>
-                  Here are some coding, design, and art projects I've completed over the course of 2022 - 2024. <span id="blink">|</span>
-                </p>
+                <h4>✦ ✦ ✦</h4>
+                <br>
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
                     <span class="expandable2__title"><h3>CODE</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                    <ion-icon class="expandable2__icon" name="caret-back-outline"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
@@ -137,14 +141,13 @@
                             </div>
                           </div>
 
-                          <a href="https://joanne-lee20.github.io/Differentiation/" target=”_blank”><div id="card">
-                            <img src="images\Code\differentiation.png" alt='Animation' id="card-image">
+                          <div id="card">
+                            <img src="images\Code\quhacks.png" alt='Animation' id="card-image">
                             <div id="card-text">
-                              <h4>DIFFERENTIATION</h4>
-                              <p>Developed a website that explains the calculus concept of differentiation.</p>
-                              <p id="small"><b><u>[ CLICK TO VISIT ]</u></b></p>
+                              <h4>QUHACKS 2023</h4>
+                              <p>Worked on the front-end development of the hackathon website; rethemed design, updated information, and added UI/UX enhancing features.</p>
                             </div>
-                          </div></a>
+                          </div>
 
                         </div>
                         <div class="col-md-6">
@@ -163,7 +166,7 @@
                             <img src="images\Code\art.png" alt='Animation' id="card-image">
                             <div id="card-text">
                               <h4>ART PORTFOLIO</h4>
-                              <p>Developed a website to store and display information about my past art projects.</p>
+                              <p>Developed a personal website to store and display information about my past art projects.</p>
                               <p id="small"><b><u>[ CLICK TO VISIT ]</u></b></p>
                             </div>
                           </div></a>
@@ -177,7 +180,7 @@
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
                     <span class="expandable2__title"><h3>ORGANIZATION</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                    <ion-icon class="expandable2__icon" name="caret-back-outline"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
@@ -187,7 +190,7 @@
                           <a href="https://drive.google.com/file/d/13sdtkmRlF4dJ_WpcPOS9fX21fMAlm8Xh/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Orgs\quhacksposter.png" id="card-image">
                             <div id="card-text">
-                              <h4>POSTER (QUHACKS)</h4>
+                              <h4>POSTER</h4>
                               <p>Created a poster to advertise the QuHacks Hackathon using Canva.</p>
                               <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
                             </div>
@@ -196,7 +199,7 @@
                           <a href="https://drive.google.com/file/d/1d1USeZPEYAmRVXelazhkNyCL6Okm8HxM/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Orgs\stemfest.png" id="card-image">
                             <div id="card-text">
-                              <h4>INSTAGRAM POST (MD STEM FEST)</h4>
+                              <h4>INSTAGRAM POST</h4>
                               <p>Created educational instagram posts for the Maryland STEM Festival Instagram account.</p>
                               <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
                             </div>
@@ -208,7 +211,7 @@
                           <a href="https://drive.google.com/file/d/1NXRbBIq0LhfoCfBpF46DqQwtHnyz55lv/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Orgs\quhackslogo.jpg" id="card-image">
                             <div id="card-text">
-                              <h4>LOGO (QUHACKS)</h4>
+                              <h4>LOGO</h4>
                               <p>Designed the official logo for QuHacks using the lvllvl textmode art tool.</p>
                               <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
                             </div>
@@ -217,7 +220,7 @@
                           <a href="https://drive.google.com/file/d/1MQEojhZfT4Yfg5wdnBu3EDa4KFFzpVun/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Orgs\wireframe.png" id="card-image">
                             <div id="card-text">
-                              <h4>LO-FI WIREFRAME (TECHNICA)</h4>
+                              <h4>LO-FI WIREFRAME</h4>
                               <p>Developed a lo-fi wireframe for the potential design of Technica's 2024 website.</p>
                               <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
                             </div>
@@ -231,8 +234,8 @@
                 
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
-                    <span class="expandable2__title"><h3>DIGITAL</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                    <span class="expandable2__title"><h3>DIGITAL ART</h3></span>
+                    <ion-icon class="expandable2__icon" name="caret-back-outline"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
@@ -242,7 +245,7 @@
                           <a href="https://drive.google.com/file/d/1C868zsn2LvTYOfQclTUJg3tEiEQo484I/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Digital\webtoon.png" id="card-image">
                             <div id="card-text">
-                              <h4>WEBTOON COVER (MODEL MINORITY)</h4>
+                              <h4>WEBTOON COVER</h4>
                               <p>Created a cover for a personal webtoon project (in development) using FireAlpaca.</p>
                               <p id="small"><b><u>[ WANT TO SEE A PREVIEW? ]</u></b></p>
                             </div>
@@ -273,17 +276,18 @@
                             <div id="card-text">
                               <h4>MERCH DESIGN</h4>
                               <p>Created a sticker design for my RedBubble store using FireAlpaca.</p>
-                              <p id="small"><b><u>[ CLICK TO VISIT MY STORE ]</u></b></p>
+                              <p id="small"><b><u>[ CLICK TO VISIT STORE ]</u></b></p>
                             </div>
                           </div></a>
 
-                          <div id="card">
+                          <a href="https://drive.google.com/file/d/1Tz9HKZ-DKV7zT6Qb8NyvUj9CVDxzHH9X/view?usp=sharing" target=”_blank”><div id="card">
                             <img src="images\Digital\playground.png" id="card-image">
                             <div id="card-text">
-                              <h4>PARK (HOMESICK)</h4>
-                              <p>Created a map for a personal game project using FireAlpaca .</p>
+                              <h4>PLAYGROUND MAP</h4>
+                              <p>Created a map for a small collaborative video game project using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO WATCH GAME PREVIEW ]</u></b></p>
                             </div>
-                          </div>
+                          </div></a>
 
                           <div id="card">
                             <img src="images\Digital\school.jpeg" id="card-image">
@@ -301,8 +305,8 @@
 
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
-                    <span class="expandable2__title"><h3>PHYSICAL</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                    <span class="expandable2__title"><h3>PHYSICAL ART</h3></span>
+                    <ion-icon class="expandable2__icon" name="caret-back-outline"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
@@ -378,19 +382,19 @@
                 <div class="expandable2">
                   <div class="expandable2__title-bar">
                     <span class="expandable2__title"><h3>VIDEO</h3></span>
-                    <ion-icon class="expandable2__icon" name="chevron-back"></ion-icon>
+                    <ion-icon class="expandable2__icon" name="caret-back-outline"></ion-icon>
                   </div>
                   <div class="expandable2__content-wrapper">
                     <div class="expandable2__content">
                       <div class="row">
                         <div class="col-md-6">
                       
-                          <a href="https://drive.google.com/file/d/1ZcFQHDk49WG9FmvsSU9Yf-1yfOO6S6Pt/view?usp=sharing" target=”_blank”><div id="card">
+                          <a href="https://drive.google.com/file/d/1Tz9HKZ-DKV7zT6Qb8NyvUj9CVDxzHH9X/view?usp=sharing" target=”_blank”><div id="card">
                             <img src='images\Videos\animation1.gif' alt='Animation' id="card-image">
                             <div id="card-text">
-                              <h4>OPENING (HOMESICK)</h4>
-                              <p>Animated an opening scene for a personal video game project using FireAlpaca.</p>
-                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                              <h4>OPENING SCENE</h4>
+                              <p>Animated an opening scene for a small collaborative video game project using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO WATCH GAME PREVIEW ]</u></b></p>
                             </div>
                           </div></a>
 
@@ -407,14 +411,14 @@
 
                         </div>
                         <div class="col-md-6">
-                          <a href="https://drive.google.com/file/d/1AiyWm9OOqXyb5iRJf3_YUgSj7tyPEszy/view?usp=sharing" target=”_blank”><div id="card">
+                          <a href="https://drive.google.com/file/d/1Tz9HKZ-DKV7zT6Qb8NyvUj9CVDxzHH9X/view?usp=sharing" target=”_blank”><div id="card">
                             <video controls="controls" poster="images\Videos\ending.png" preload="none" id="card-image">
                               <source src="images\Videos\animation2.mp4">
                             </video>
                             <div id="card-text">
-                              <h4>ENDING (HOMESICK)</h4>
-                              <p>Animated an ending scene for a personal video game project using FireAlpaca.</p>
-                              <p id="small"><b><u>[ CLICK TO VIEW FULL ]</u></b></p>
+                              <h4>ENDING SCENE</h4>
+                              <p>Animated an ending scene for a small collaborative video game project using FireAlpaca.</p>
+                              <p id="small"><b><u>[ CLICK TO WATCH GAME PREVIEW ]</u></b></p>
                             </div>
                           </div></a>
 
@@ -437,18 +441,12 @@
               </div></div>
             </div>
           </div>
+
           <div id="credits">
-            <p><strong>✦ CREDITS:</strong> I built this website in <a href="https://code.visualstudio.com/" target="_blank"><u>Visual Studio Code</u></a> using HTML/CSS, JavaScript, <a href="https://getbootstrap.com/" target="_blank"><u>Bootstrap</u></a>, and <a href="https://ionic.io/ionicons" target="_blank"><u>Ionicons</u></a> while frequently referencing resources on <a href="https://www.w3schools.com/" target="_blank"><u>W3Schools</u></a> and <a href="https://www.freecodecamp.org/" target="_blank"><u>freeCodeCamp</u></a> - still learning as I go, so modifications are on the way.</p>
+            <p><strong>✦ CREDITS:</strong> I built this website in <a href="https://code.visualstudio.com/" target="_blank"><u>Visual Studio Code</u></a> using HTML/CSS, JavaScript, <a href="https://getbootstrap.com/" target="_blank"><u>Bootstrap</u></a>, and <a href="https://ionic.io/ionicons" target="_blank"><u>Ionicons</u></a> while referencing resources on <a href="https://www.w3schools.com/" target="_blank"><u>W3Schools</u></a> and <a href="https://www.freecodecamp.org/" target="_blank"><u>freeCodeCamp</u></a>.</p>
           </div>
+
           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
-                    </div>
-                  </div>
-                </div>
-              </div></div>
-            </div>
-
-          </div>
     </body>
 </html>
